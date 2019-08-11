@@ -5,7 +5,7 @@ import re
 from itertools import chain
 
 more_than_11_digits_re = re.compile(r'\d{12,}')
-digits_brackets_dashes_spaces_bounded_re = re.compile(r'(?<![\.=\w])[\d()\- ]+(?![\.=\d\w])')
+digits_brackets_dashes_spaces_bounded_re = re.compile(r'(?<![\.%!?,=\w])[\d()\- ]+(?![\.=!,?%\d\w])')
 non_digit_re = re.compile(r'\D')
 
 logging.basicConfig()
